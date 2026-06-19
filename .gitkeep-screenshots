@@ -1,0 +1,10 @@
+Screenshots needed:
+1. desktop-hero.png - Hero section em 1920px
+2. desktop-produtos.png - Grid de produtos em desktop
+3. desktop-depoimentos.png - Seção de depoimentos
+4. tablet-view.png - Visão geral em 768px
+5. mobile-hero.png - Hero em 375px
+6. mobile-menu.png - Menu hamburguer aberto
+7. mobile-form.png - Formulário de contato
+
+Para capturar: Use DevTools (F12) -> Device Toolbar ou extensões como Full Page Screen Capture
