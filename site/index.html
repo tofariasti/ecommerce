@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopStyle - Moda que Transforma Seu Estilo</title>
+  <meta name="description" content="Descubra as últimas tendências em moda com descontos exclusivos. Frete grátis acima de R$ 199. Compre agora!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#home" class="logo">Shop<span>Style</span></a>
+      
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Início</a></li>
+          <li><a href="#produtos" class="nav__link">Produtos</a></li>
+          <li><a href="#ofertas" class="nav__link">Ofertas</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="header__cart" aria-label="Carrinho de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="header__cart-count">0</span>
+        </button>
+        <a href="#contato" class="btn btn--primary">Comprar Agora</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container hero__container">
+      <div class="hero__content" data-aos="fade-up">
+        <span class="hero__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+          Frete Grátis acima de R$ 199
+        </span>
+        <h1 class="hero__title">
+          Moda que Transforma <span class="text-gradient">Seu Estilo</span>
+        </h1>
+        <p class="hero__subtitle">
+          Descubra as últimas tendências em roupas, calçados e acessórios com descontos exclusivos de até 50%. Qualidade premium com preços que cabem no seu bolso.
+        </p>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong data-counter="5000">0</strong>+
+            <span>Clientes satisfeitos</span>
+          </div>
+          <div class="hero__stat">
+            <strong data-counter="1500">0</strong>+
+            <span>Produtos disponíveis</span>
+          </div>
+          <div class="hero__stat">
+            <strong>4.9</strong>/5
+            <span>Avaliação média</span>
+          </div>
+        </div>
+        <div class="hero__cta">
+          <a href="#produtos" class="btn btn--primary btn--lg">Ver Coleção</a>
+          <a href="#ofertas" class="btn btn--outline btn--lg">Ofertas Especiais</a>
+        </div>
+      </div>
+      
+      <div class="hero__image" data-aos="fade-left" data-aos-delay="200">
+        <div class="hero__image-wrap">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=800&fit=crop&q=80" alt="Modelo usando roupas da coleção ShopStyle" loading="eager">
+          <div class="hero__float-card" data-aos="fade-up" data-aos-delay="400">
+            <span class="hero__float-badge">Novo</span>
+            <h4>Coleção Verão 2026</h4>
+            <p>Até 50% OFF</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section section--alt" id="categorias">
+    <div class="container">
+      <header class="section__header" data-aos="fade-up">
+        <span class="section__eyebrow">Categorias</span>
+        <h2 class="section__title">Explore Nossa <span class="text-gradient">Coleção</span></h2>
+        <p class="section__subtitle">Encontre exatamente o que você procura nas nossas categorias especializadas</p>
+      </header>
+
+      <div class="categories">
+        <a href="#produtos" class="category-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=500&fit=crop&q=80" alt="Roupas Femininas" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3>Roupas Femininas</h3>
+            <p>230+ produtos</p>
+            <span class="category-card__arrow">→</span>
+          </div>
+        </a>
+
+        <a href="#produtos" class="category-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=500&fit=crop&q=80" alt="Roupas Masculinas" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3>Roupas Masculinas</h3>
+            <p>180+ produtos</p>
+            <span class="category-card__arrow">→</span>
+          </div>
+        </a>
+
+        <a href="#produtos" class="category-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=500&fit=crop&q=80" alt="Calçados" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3>Calçados</h3>
+            <p>320+ produtos</p>
+            <span class="category-card__arrow">→</span>
+          </div>
+        </a>
+
+        <a href="#produtos" class="category-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=400&h=500&fit=crop&q=80" alt="Acessórios" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3>Acessórios</h3>
+            <p>150+ produtos</p>
+            <span class="category-card__arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section" id="produtos">
+    <div class="container">
+      <header class="section__header" data-aos="fade-up">
+        <span class="section__eyebrow">Produtos em Destaque</span>
+        <h2 class="section__title">Mais <span class="text-gradient">Vendidos</span></h2>
+        <p class="section__subtitle">Confira os produtos favoritos dos nossos clientes</p>
+      </header>
+
+      <div class="products">
+        <article class="product-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=500&fit=crop&q=80" alt="Vestido Floral Verão" loading="lazy">
+            <span class="product-card__badge product-card__badge--sale">-30%</span>
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Vestido Floral Verão</h3>
+            <p class="product-card__category">Roupas Femininas</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(124)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--old">R$ 199,90</span>
+              <span class="price--new">R$ 139,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Vestido Floral Verão">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop&q=80" alt="Camisa Social Slim" loading="lazy">
+            <span class="product-card__badge product-card__badge--new">Novo</span>
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Camisa Social Slim</h3>
+            <p class="product-card__category">Roupas Masculinas</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(89)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--new">R$ 159,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Camisa Social Slim">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=500&fit=crop&q=80" alt="Tênis Esportivo Premium" loading="lazy">
+            <span class="product-card__badge product-card__badge--hot">🔥 Hot</span>
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Tênis Esportivo Premium</h3>
+            <p class="product-card__category">Calçados</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(256)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--old">R$ 349,90</span>
+              <span class="price--new">R$ 279,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Tênis Esportivo Premium">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1509319117398-5f1f5e4bf5fa?w=400&h=500&fit=crop&q=80" alt="Bolsa Executiva Couro" loading="lazy">
+            <span class="product-card__badge product-card__badge--sale">-25%</span>
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Bolsa Executiva Couro</h3>
+            <p class="product-card__category">Acessórios</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(73)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--old">R$ 399,90</span>
+              <span class="price--new">R$ 299,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Bolsa Executiva Couro">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop&q=80" alt="Jaqueta Jeans Premium" loading="lazy">
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Jaqueta Jeans Premium</h3>
+            <p class="product-card__category">Roupas Femininas</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(45)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--new">R$ 229,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Jaqueta Jeans Premium">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=400&h=500&fit=crop&q=80" alt="Relógio Smartwatch" loading="lazy">
+            <span class="product-card__badge product-card__badge--new">Novo</span>
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Relógio Smartwatch</h3>
+            <p class="product-card__category">Acessórios</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(198)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--new">R$ 899,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Relógio Smartwatch">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=500&fit=crop&q=80" alt="Sandália Rasteira" loading="lazy">
+            <span class="product-card__badge product-card__badge--sale">-40%</span>
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Sandália Rasteira</h3>
+            <p class="product-card__category">Calçados</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(167)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--old">R$ 149,90</span>
+              <span class="price--new">R$ 89,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Sandália Rasteira">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1574634534894-89d7576c8259?w=400&h=500&fit=crop&q=80" alt="Óculos de Sol UV400" loading="lazy">
+            <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h3>Óculos de Sol UV400</h3>
+            <p class="product-card__category">Acessórios</p>
+            <div class="product-card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(312)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price--new">R$ 179,90</span>
+            </div>
+            <button class="btn btn--primary btn--block" data-product="Óculos de Sol UV400">Comprar</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section class="promo-banner" id="ofertas" data-aos="fade-up">
+    <div class="container promo-banner__container">
+      <div class="promo-banner__content">
+        <span class="promo-banner__label">Oferta Especial</span>
+        <h2 class="promo-banner__title">Promoção Relâmpago!</h2>
+        <p class="promo-banner__text">Até 50% de desconto em produtos selecionados. Não perca!</p>
+        <div class="promo-banner__countdown">
+          <div class="countdown__item">
+            <span class="countdown__value" id="hours">00</span>
+            <span class="countdown__label">Horas</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__value" id="minutes">00</span>
+            <span class="countdown__label">Min</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__value" id="seconds">00</span>
+            <span class="countdown__label">Seg</span>
+          </div>
+        </div>
+        <a href="#produtos" class="btn btn--white btn--lg">Aproveitar Oferta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section section--alt" id="depoimentos">
+    <div class="container">
+      <header class="section__header" data-aos="fade-up">
+        <span class="section__eyebrow">Depoimentos</span>
+        <h2 class="section__title">O que Nossos Clientes <span class="text-gradient">Dizem</span></h2>
+        <p class="section__subtitle">Mais de 5.000 clientes satisfeitos com nossas roupas e atendimento</p>
+      </header>
+
+      <div class="testimonials">
+        <article class="testimonial-card" data-aos="fade-right" data-aos-delay="0">
+          <div class="testimonial-card__header">
+            <img src="https://i.pravatar.cc/80?img=1" alt="Ana Silva" class="testimonial-card__avatar">
+            <div class="testimonial-card__info">
+              <h4>Ana Silva</h4>
+              <div class="testimonial-card__rating">
+                <span class="stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-card__text">
+            "Adorei a qualidade das roupas! O vestido que comprei é exatamente como na foto, o tecido é maravilhoso e o caimento perfeito. Entrega super rápida. Já virei cliente fiel!"
+          </p>
+          <span class="testimonial-card__product">Vestido Floral Verão</span>
+        </article>
+
+        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card__header">
+            <img src="https://i.pravatar.cc/80?img=12" alt="Carlos Mendes" class="testimonial-card__avatar">
+            <div class="testimonial-card__info">
+              <h4>Carlos Mendes</h4>
+              <div class="testimonial-card__rating">
+                <span class="stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-card__text">
+            "Primeira vez comprando e não me arrependo! A camisa social tem ótimo acabamento, o atendimento pelo WhatsApp foi excelente e recebi em 3 dias. Recomendo demais!"
+          </p>
+          <span class="testimonial-card__product">Camisa Social Slim</span>
+        </article>
+
+        <article class="testimonial-card" data-aos="fade-left" data-aos-delay="200">
+          <div class="testimonial-card__header">
+            <img src="https://i.pravatar.cc/80?img=5" alt="Mariana Costa" class="testimonial-card__avatar">
+            <div class="testimonial-card__info">
+              <h4>Mariana Costa</h4>
+              <div class="testimonial-card__rating">
+                <span class="stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-card__text">
+            "Os tênis são incríveis! Super confortáveis, modernos e com preço justo. A loja tem ótimas opções e o site é fácil de navegar. Vou comprar mais vezes com certeza!"
+          </p>
+          <span class="testimonial-card__product">Tênis Esportivo Premium</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <header class="section__header" data-aos="fade-up">
+        <span class="section__eyebrow">Dúvidas Frequentes</span>
+        <h2 class="section__title">Perguntas <span class="text-gradient">Frequentes</span></h2>
+        <p class="section__subtitle">Tire suas dúvidas sobre compras, entregas e trocas</p>
+      </header>
+
+      <div class="faq">
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq__question">
+            <span>Como funciona o frete?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq__icon">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>O frete é calculado automaticamente no checkout com base no seu CEP. Para compras acima de R$ 199, o frete é totalmente grátis para todo o Brasil! Trabalhamos com transportadoras confiáveis para garantir que seu pedido chegue com segurança.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq__question">
+            <span>Quais são as formas de pagamento?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq__icon">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Aceitamos cartões de crédito (Visa, Mastercard, Elo, American Express) em até 6x sem juros, cartões de débito, PIX com 5% de desconto e boleto bancário. Todas as transações são 100% seguras e criptografadas.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq__question">
+            <span>Qual é o prazo de entrega?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq__icon">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>O prazo varia de acordo com sua região. Em geral, entregas nas capitais levam de 3 a 7 dias úteis, e para o interior de 7 a 15 dias úteis. Você recebe o código de rastreamento assim que o pedido for postado.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="300">
+          <button class="faq__question">
+            <span>Posso trocar ou devolver?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq__icon">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Sim! Você tem até 7 dias após o recebimento para solicitar troca ou devolução, conforme o Código de Defesa do Consumidor. O produto deve estar sem uso, com etiquetas e na embalagem original. A primeira troca é por nossa conta!</p>
+          </div>
+        </div>
+
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="400">
+          <button class="faq__question">
+            <span>Como rastrear meu pedido?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq__icon">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Assim que seu pedido for postado, você receberá um e-mail e WhatsApp com o código de rastreamento. Basta acessar o site dos Correios ou da transportadora e inserir o código para acompanhar em tempo real a localização da sua encomenda.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="500">
+          <button class="faq__question">
+            <span>Os produtos são originais?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq__icon">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Sim, todos os nossos produtos são 100% originais e de alta qualidade. Trabalhamos apenas com fornecedores confiáveis e oferecemos garantia em todos os itens. Sua satisfação é nossa prioridade!</p>
+          </div>
+        </div>
+
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="600">
+          <button class="faq__question">
+            <span>Como entrar em contato com o suporte?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq__icon">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Você pode entrar em contato conosco pelo WhatsApp (resposta em minutos), e-mail ou pelo formulário de contato abaixo. Nossa equipe está disponível de segunda a sábado, das 9h às 18h, para ajudar você!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section section--alt" id="contato">
+    <div class="container">
+      <header class="section__header" data-aos="fade-up">
+        <span class="section__eyebrow">Faça seu Pedido</span>
+        <h2 class="section__title">Entre em <span class="text-gradient">Contato</span></h2>
+        <p class="section__subtitle">Preencha o formulário e faça seu pedido pelo WhatsApp</p>
+      </header>
+
+      <div class="contact">
+        <form class="contact__form" id="contactForm" data-aos="fade-right">
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Telefone/WhatsApp</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" placeholder="00000-000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="product">Produto de Interesse</label>
+            <input type="text" id="product" name="product" required placeholder="Nome do produto">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="size">Tamanho</label>
+              <select id="size" name="size">
+                <option value="">Selecione</option>
+                <option value="PP">PP</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+                <option value="XG">XG</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Quantidade</label>
+              <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Observações</label>
+            <textarea id="message" name="message" rows="4" placeholder="Cor, dúvidas ou informações adicionais"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Enviar Pedido pelo WhatsApp
+          </button>
+        </form>
+
+        <div class="contact__info" data-aos="fade-left">
+          <div class="contact__info-card">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h4>WhatsApp</h4>
+            <p>(51) 99121-3724</p>
+            <span>Resposta em minutos</span>
+          </div>
+
+          <div class="contact__info-card">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <path d="M22 6l-10 7L2 6"/>
+              </svg>
+            </div>
+            <h4>E-mail</h4>
+            <p>contato@shopstyle.com.br</p>
+            <span>Resposta em 24h</span>
+          </div>
+
+          <div class="contact__info-card">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h4>Horário de Atendimento</h4>
+            <p>Seg a Sáb: 9h às 18h</p>
+            <span>Dom: Fechado</span>
+          </div>
+
+          <div class="contact__info-card">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+              </svg>
+            </div>
+            <h4>Frete Grátis</h4>
+            <p>Acima de R$ 199</p>
+            <span>Todo o Brasil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="about" data-aos="fade-up">
+        <div class="about__content">
+          <span class="section__eyebrow">Sobre a ShopStyle</span>
+          <h2 class="section__title">Moda de Qualidade com <span class="text-gradient">Preços Justos</span></h2>
+          <p>Fundada em 2020, a ShopStyle nasceu com o propósito de democratizar o acesso à moda de qualidade. Acreditamos que todos merecem se vestir bem, com peças que reflitam sua personalidade e estilo único.</p>
+          <p>Nossa curadoria seleciona cuidadosamente cada produto, priorizando qualidade, conforto e design. Trabalhamos com fornecedores confiáveis e garantimos que cada item atenda nossos altos padrões antes de chegar até você.</p>
+          <ul class="about__features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <path d="M22 4 12 14.01l-3-3"/>
+              </svg>
+              Produtos 100% originais e de qualidade
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <path d="M22 4 12 14.01l-3-3"/>
+              </svg>
+              Entrega rápida e segura
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <path d="M22 4 12 14.01l-3-3"/>
+              </svg>
+              Atendimento humanizado e eficiente
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <path d="M22 4 12 14.01l-3-3"/>
+              </svg>
+              Garantia e política de trocas facilitada
+            </li>
+          </ul>
+        </div>
+        <div class="about__image">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=700&fit=crop&q=80" alt="Loja ShopStyle" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <a href="#home" class="logo logo--footer">Shop<span>Style</span></a>
+          <p>Moda que transforma seu estilo. Qualidade, conforto e design em cada peça.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__title">Categorias</h4>
+          <ul class="footer__links">
+            <li><a href="#produtos">Roupas Femininas</a></li>
+            <li><a href="#produtos">Roupas Masculinas</a></li>
+            <li><a href="#produtos">Calçados</a></li>
+            <li><a href="#produtos">Acessórios</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__title">Institucional</h4>
+          <ul class="footer__links">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__title">Atendimento</h4>
+          <ul class="footer__links">
+            <li><a href="#faq">Trocas e Devoluções</a></li>
+            <li><a href="#faq">Entregas e Prazos</a></li>
+            <li><a href="#faq">Formas de Pagamento</a></li>
+            <li><a href="#contato">Central de Ajuda</a></li>
+            <li><a href="#contato">WhatsApp: (51) 99121-3724</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 ShopStyle - Moda e Estilo. Todos os direitos reservados.</p>
+        <p class="footer__dev">
+          Demo desenvolvido por <a href="https://tofariasti.github.io/" target="_blank" rel="noopener">Tiago O. de Farias</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Abrir WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
